@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Richard - HTML Template
+Version:    1.1
+Author:        Andrey Sokoltsov
+Profile:    http://themeforest.net/user/andreysokoltsov
+-------------------------------------------------------------------*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext');
+@import url("materialdesignicons.min.css");
+
+/* PLUGIN CSS */
+@import url("../assets/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css");
+
+/* MAIN CSS */
+@import url("bootstrap.min.css");
+@import url("typography.css");
+@import url("theme.css");
+@import url("responsive.css");
+@import url('color.css');
+@import url("custom.css");
+@import url("twentytwenty.css");
+
+

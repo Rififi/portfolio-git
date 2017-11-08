@@ -1,0 +1,25 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST}	^www\.rififi\.cz$
+RewriteRule ^portfolio\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^english\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^nabidka-sluzeb\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^cenik\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^mapa-stranek\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^o-rififi\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^kontakt\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^cdn77\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^bellum\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^vodafone-total-rewards\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^media-pod-lupou\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^vodafone-vbo\.html$	http://www.rififi.cz [L,R=301]
+RewriteRule ^pour-feliciter-stock-2009\.html$	http://www.rififi.cz [L,R=301]
+
+
+RewriteBase /
+RewriteCond %{QUERY_STRING} ^page=([^&]+)$
+RewriteRule ^index\.php$ %1.html? [R=301,L,NE]
+RewriteRule ^([^/]+)\.html index.php?rw=1&page=$1 [L,QSA]
+RewriteRule ^([^/]+)/{1}([^/.]+)(\.html)?$ index.php?rw=1&page=$1&z=$2 [L,QSA] 
+
+ErrorDocument 404 /404.html
